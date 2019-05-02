@@ -28,6 +28,7 @@ router.get('/list/:pageNumber', (req, res) => {
                     skip: 10 * (Number(pageNumber) - 1),
                     projection: {
                         _id: 0,
+                        rank: 1,
                         first_name: 1,
                         last_name: 1,
                         username: 1
